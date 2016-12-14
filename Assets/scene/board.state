@@ -1,0 +1,518 @@
+{
+  "class": "qc.Node",
+  "data": {
+    "_prefab": [
+      7,
+      "Temp/scene_editor.bin"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "world"
+    ],
+    "uniqueName": [
+      7,
+      ""
+    ],
+    "ignoreDestroy": [
+      5,
+      false
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      4294967295
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [],
+    "position": [
+      0,
+      0,
+      4.519114688128752,
+      1.9839034205231485,
+      4.519114688128752,
+      1.9839034205231485,
+      1123,
+      493,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      0.9919517102615694
+    ],
+    "scaleY": [
+      3,
+      0.9919517102615694
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [
+      {
+        "class": "qc.UIRoot",
+        "data": {
+          "uuid": "aec0ab4d-3997-4267-b530-35d360c5961f",
+          "_prefab": [
+            7,
+            ""
+          ],
+          "__lock": [
+            5,
+            null
+          ],
+          "name": [
+            7,
+            "UIRoot"
+          ],
+          "uniqueName": [
+            7,
+            ""
+          ],
+          "ignoreDestroy": [
+            5,
+            false
+          ],
+          "alpha": [
+            3,
+            1
+          ],
+          "visible": [
+            5,
+            true
+          ],
+          "colorTint": [
+            14,
+            16777215
+          ],
+          "static": [
+            5,
+            false
+          ],
+          "scripts": [
+            {
+              "clazz": "qc.ScaleAdapter",
+              "data": "70591959-8522-4881-aabc-c11a23871fee"
+            }
+          ],
+          "position": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2186.7748478701824,
+            960,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "scaleX": [
+            3,
+            0.5135416666666667
+          ],
+          "scaleY": [
+            3,
+            0.5135416666666667
+          ],
+          "rotation": [
+            3,
+            0
+          ],
+          "interactive": [
+            5,
+            false
+          ],
+          "isFiltersThrough": [
+            5,
+            null
+          ],
+          "children": [
+            {
+              "class": "qc.UIImage",
+              "data": {
+                "uuid": "6ae1c986-436f-402f-b7ad-2e5a15d700ab",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "Card"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.Card",
+                    "data": "28a78d4f-9e79-43c2-a9cd-da4118d8cfe8"
+                  },
+                  {
+                    "clazz": "qc.TweenScale",
+                    "data": "f02ef881-7926-464d-991a-feccbc089ccf"
+                  }
+                ],
+                "position": [
+                  0.5047918874396631,
+                  -0.000038583551321798964,
+                  662.5185245225836,
+                  161.02873134109166,
+                  662.5185245225836,
+                  161.02873134109166,
+                  140,
+                  190,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  true
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [
+                  {
+                    "class": "qc.UIImage",
+                    "data": {
+                      "uuid": "ad9dfafb-fa3c-4773-93ef-8b676c5a256c",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "Face"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        false
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        -70.67086424155283,
+                        0.0073308747511418035,
+                        140,
+                        190,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/sprite/cardHearts5.bin",
+                        "5335ad38-c226-468f-8fb4-434d6cf05103",
+                        0
+                      ],
+                      "frame": null,
+                      "imageType": [
+                        3,
+                        0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
+                      ]
+                    }
+                  }
+                ],
+                "texture": [
+                  10,
+                  "Assets/sprite/cardBack_blue2.bin",
+                  "512567e5-097a-4c86-a6c3-825ed53fa202",
+                  0
+                ],
+                "frame": null,
+                "imageType": [
+                  3,
+                  0
+                ],
+                "skewX": [
+                  3,
+                  null
+                ],
+                "skewY": [
+                  3,
+                  null
+                ]
+              },
+              "__json": {
+                "28a78d4f-9e79-43c2-a9cd-da4118d8cfe8": {
+                  "class": "qc.engine.Card",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "28a78d4f-9e79-43c2-a9cd-da4118d8cfe8"
+                    ],
+                    "enable": true
+                  }
+                },
+                "f02ef881-7926-464d-991a-feccbc089ccf": {
+                  "class": "qc.TweenScale",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "f02ef881-7926-464d-991a-feccbc089ccf"
+                    ],
+                    "enable": false,
+                    "_curve": [
+                      22,
+                      "qc.BezierCurve",
+                      [
+                        [
+                          0,
+                          0,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          0
+                        ]
+                      ]
+                    ],
+                    "sampleMethod": [
+                      3,
+                      0
+                    ],
+                    "style": [
+                      3,
+                      0
+                    ],
+                    "delay": [
+                      3,
+                      0
+                    ],
+                    "duration": [
+                      3,
+                      0.5
+                    ],
+                    "tweenGroup": [
+                      3,
+                      0
+                    ],
+                    "flag": [
+                      7,
+                      ""
+                    ],
+                    "playOnAwake": [
+                      5,
+                      false
+                    ],
+                    "from": [
+                      24,
+                      "qc.Point",
+                      [
+                        1,
+                        1
+                      ]
+                    ],
+                    "to": [
+                      24,
+                      "qc.Point",
+                      [
+                        -1,
+                        1
+                      ]
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "__json": {
+          "70591959-8522-4881-aabc-c11a23871fee": {
+            "class": "qc.ScaleAdapter",
+            "data": {
+              "uuid": [
+                7,
+                "70591959-8522-4881-aabc-c11a23871fee"
+              ],
+              "enable": true,
+              "target": null,
+              "referenceResolution": [
+                24,
+                "qc.Point",
+                [
+                  640,
+                  960
+                ]
+              ],
+              "manualType": [
+                3,
+                3
+              ],
+              "fullTarget": [
+                5,
+                true
+              ],
+              "gameObjectRecord": [
+                4,
+                [
+                  0.5135416666666667,
+                  0.5135416666666667,
+                  2186.7748478701824,
+                  960
+                ]
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "dependences": {
+    "5335ad38-c226-468f-8fb4-434d6cf05103": {
+      "key": "Assets/sprite/cardHearts5.bin",
+      "uuid": "5335ad38-c226-468f-8fb4-434d6cf05103"
+    },
+    "512567e5-097a-4c86-a6c3-825ed53fa202": {
+      "key": "Assets/sprite/cardBack_blue2.bin",
+      "uuid": "512567e5-097a-4c86-a6c3-825ed53fa202"
+    }
+  }
+}
