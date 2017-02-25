@@ -1,7 +1,7 @@
 {
   "class": "qc.UIImage",
   "data": {
-    "uuid": "a28ca3e9-c168-4d30-b38a-4ba0b349a9a6",
+    "uuid": "a0ade014-7280-4ef1-abe3-0a1a701f435a",
     "_prefab": [
       7,
       "ad6d776c-d064-4529-9727-c3a836f67f12"
@@ -46,15 +46,19 @@
       {
         "clazz": "qc.TweenScale",
         "data": "f02ef881-7926-464d-991a-feccbc089ccf"
+      },
+      {
+        "clazz": "qc.TweenPosition",
+        "data": "4acfcf25-847f-4401-b7d2-f538a454c383"
       }
     ],
     "position": [
       0.5,
       -0.000038583551321798964,
-      662.5185245225836,
-      161.02873134109166,
-      662.5185245225836,
-      161.02873134109166,
+      0,
+      0,
+      0,
+      0,
       140,
       190,
       0,
@@ -90,7 +94,7 @@
       {
         "class": "qc.UIImage",
         "data": {
-          "uuid": "17630c58-301f-4e0f-922a-45aecd124e06",
+          "uuid": "7261d267-0d53-4fdb-9cd2-f8efe6954026",
           "_prefab": [
             7,
             ""
@@ -129,11 +133,11 @@
           ],
           "scripts": [],
           "position": [
-            0,
-            0,
-            140,
+            0.5,
             0,
             70,
+            0,
+            0,
             0.0073308747511418035,
             140,
             190,
@@ -218,7 +222,8 @@
           "28a78d4f-9e79-43c2-a9cd-da4118d8cfe8"
         ],
         "enable": true,
-        "face": null
+        "face": null,
+        "croupier": null
       }
     },
     "f02ef881-7926-464d-991a-feccbc089ccf": {
@@ -294,6 +299,86 @@
             -1,
             1
           ]
+        ]
+      }
+    },
+    "4acfcf25-847f-4401-b7d2-f538a454c383": {
+      "class": "qc.TweenPosition",
+      "data": {
+        "uuid": [
+          7,
+          "4acfcf25-847f-4401-b7d2-f538a454c383"
+        ],
+        "enable": false,
+        "_curve": [
+          22,
+          "qc.BezierCurve",
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        ],
+        "sampleMethod": [
+          3,
+          0
+        ],
+        "style": [
+          3,
+          0
+        ],
+        "delay": [
+          3,
+          0
+        ],
+        "duration": [
+          3,
+          0.5
+        ],
+        "tweenGroup": [
+          3,
+          0
+        ],
+        "flag": [
+          7,
+          ""
+        ],
+        "playOnAwake": [
+          5,
+          false
+        ],
+        "from": [
+          24,
+          "qc.Point",
+          [
+            0,
+            0
+          ]
+        ],
+        "to": [
+          24,
+          "qc.Point",
+          [
+            0,
+            0
+          ]
+        ],
+        "moveAxis": [
+          3,
+          255
         ]
       }
     }

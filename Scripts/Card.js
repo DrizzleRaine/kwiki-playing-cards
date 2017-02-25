@@ -1,12 +1,13 @@
 // define a user behaviour
 var Card = qc.defineBehaviour('qc.engine.Card', qc.Behaviour, function() {
-    // need this behaviour be scheduled in editor
-    //this.runInEditor = true;
     this.face = null;
     this.faceVisible = false;
+    this.flippingCard = false;
+    this.croupier = null;
 }, {
     // fields need to be serialized
-    face: qc.Serializer.TEXTURE
+    face: qc.Serializer.TEXTURE,
+    croupier: qc.Serializer.NODE
 });
 
 // Called when the script instance is being loaded.
@@ -14,49 +15,59 @@ Card.prototype.awake = function() {
     if (this.face) {
 		this.gameObject.find('Face').texture = this.face;
     }
+    this.tweenScale = this.gameObject.getScript('qc.TweenScale');
+    this.tweenPosition = this.gameObject.getScript('qc.TweenPosition');
+    this.faceNode = this.gameObject.find('Face');
+    this.croupier = this.croupier ||  this.gameObject.parent;
+    var self = this;
+    
+    this.tweenScale.onFinished.add(function() {
+        self.flippingCard = false;
+        self.faceVisible = !self.faceVisible;
+        self.croupier.Croupier.compare();
+    });
+    
+    this.tweenPosition.onFinished.add(function() {
+        self.flippingCard = false;
+        self.faceVisible = false;
+        self.gameObject.visible = false;
+        self.croupier.Croupier.compare();
+    });    
 };
 
-// Called every frame, if the behaviour is enabled.
-//Card.prototype.update = function() {
-//
-//};
+Card.prototype.sameCard = function(card) {
+	return this.faceNode.texture.atlas.key === card.Card.faceNode.texture.atlas.key;
+};
 
 Card.prototype.onClick = function() {
-    /*this.game.timer.add((scaleTween.duration / 2) * 1000, function() {
-        face.visible = !face.visible;
-    });*/    
 	if (this.faceVisible) return;
-    
-	var holder = this.gameObject.parent.getScript('qc.engine.CardHolder');
-    holder.updateVisibles();
-	this.flipCard();      
-    holder.checkCards();
-    
+    if (this.croupier.Croupier.visibleCards.length >=2 ) return;
   
+	this.flipCard(); 
 };
 
 Card.prototype.flipCard = function() {
-    this.faceVisible = !this.faceVisible;
-    var scaleTween = this.gameObject.getScript('qc.TweenScale');
-    var face = this.gameObject.find('Face');
-
+    var self = this;
+    if (this.flippingCard) {
+        this.game.timer.add((this.tweenScale.duration * 1000) + 500, function() {
+            self.flipCard();  
+        });
+        return;
+    }
+    this.flippingCard = true;
+    
     if (this.gameObject.scaleX < 0 )
-        scaleTween.playReverse();
+        this.tweenScale.playReverse();
 	else
-        scaleTween.playForward();
-    
-    this.game.timer.add((scaleTween.duration / 2) * 1000, function() {
-        face.visible = !face.visible;
-    });
+        this.tweenScale.playForward();
+    this.game.timer.add((this.tweenScale.duration / 2) * 1000, function() {
+        self.faceNode.visible = !self.faceNode.visible;
+        self.faceNode.anchorX = 70;
+    });    
 };
 
-Card.prototype.resetCard = function() {
-    var scaleTween = this.gameObject.getScript('qc.TweenScale');
-    scaleTween.stop();
-    scaleTween.resetToBeginning();
-    var face = this.gameObject.find('Face');
-	face.visible = false;
-    this.faceVisible = false;
-    
+Card.prototype.removeCard = function() {
+    this.tweenPosition.from = new qc.Point(this.gameObject.x,this.gameObject.y);
+    this.tweenPosition.to = new qc.Point(-200,-200);
+    this.tweenPosition.playForward();    
 };
-

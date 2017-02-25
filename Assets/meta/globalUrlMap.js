@@ -1,6 +1,6 @@
 urlMapConfig = {
   "ad6d776c-d064-4529-9727-c3a836f67f12": "Assets/prefab/Card.bin",
-  "7be1f0d9-5cc3-442d-96f0-08f0e2f1ca37": "Assets/scene/board.bin",
+  "f6755d38-4ed6-4b3f-b198-c2742554541d": "Assets/scene/board.bin",
   "a52bcac3-ab59-443f-aaa0-8b6d37145c20": "Assets/sprite/cardBack_blue1.bin",
   "512567e5-097a-4c86-a6c3-825ed53fa202": "Assets/sprite/cardBack_blue2.bin",
   "dbfcbc07-3d9a-4812-90b2-20fafaef69ab": "Assets/sprite/cardBack_blue3.bin",

@@ -1,5 +1,5 @@
 {
-  "gameName": "DefaultGame",
+  "gameName": "Memory Deck",
   "version": "1.0",
   "localStorageID": "com.DefaultCompany.Default",
   "gameInstance": "qc_game",
@@ -26,7 +26,10 @@
   "publish": {
     "android": "build/android",
     "ios": "build/ios",
-    "browsers": "build/browsers"
+    "browsers": "build/browsers",
+    "browsers_timestamp": true,
+    "android_timestamp": true,
+    "ios_timestamp": true
   },
   "ios": {
     "target": "8.1",
@@ -68,5 +71,6 @@
     "buildCode": 1,
     "makeApk": false
   },
-  "toolFlag": 508
+  "toolFlag": 508,
+  "buildVersion": "1"
 }
